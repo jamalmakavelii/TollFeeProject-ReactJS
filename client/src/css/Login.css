@@ -1,0 +1,66 @@
+.login-page, .user-form-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: #50623A;
+}
+
+.login-container, .user-form {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px; /* Set maximum width */
+    width: 100%; /* Take full width on smaller screens */
+}
+
+.login-container h2, .user-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-container .form-group,
+.user-form .form-group {
+    margin-bottom: 15px;
+}
+
+.login-container .form-group label,
+.user-form .form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-container .form-group input,
+.login-container .form-group select,
+.user-form .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.login-container .btn-login,
+.user-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Media query for screens smaller than 600px (adjust as needed) */
+@media (max-width: 600px) {
+    .login-container, .user-form-container {
+        max-width: none; /* Reset max-width for smaller screens */
+    }
+}

@@ -1,0 +1,64 @@
+/* Design for hero.css */
+
+.hero {
+  display: flex;
+  background-color: #50623A;
+  color: rgb(255, 255, 255);
+  height: 92vh;
+  padding-inline: 30px;
+}
+
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-text {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  word-spacing: 2%;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  max-width: 400px;
+  margin-bottom: 50px;
+}
+
+.hero-image {
+  flex: 1;
+  background: url('C:\Users\Desktop\Desktop\TOLLGATE-REACTJS\client\public\Images\tollgate.png') center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .hero {
+      flex-direction: column;
+      height: auto;
+      padding-inline: 15px;
+  }
+
+  .hero-content {
+      text-align: center;
+  }
+
+  .hero-text {
+      font-size: 2.5rem;
+      margin-bottom: 5px;
+  }
+
+  .hero-description {
+      font-size: 1rem;
+      max-width: none;
+      margin-bottom: 30px;
+  }
+
+  .hero-image {
+      background-size: cover;
+  }
+}

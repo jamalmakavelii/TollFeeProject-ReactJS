@@ -1,0 +1,42 @@
+/* Design for my Navbar */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color:  #294B29;
+    color: #fff;
+    padding-inline: 45px;
+    border-bottom: 2px solid #DBE7C9;
+}
+
+.navbar-left {
+ display: flex;
+ align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    margin-right: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
